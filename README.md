@@ -1,2 +1,2 @@
 # lizzy-hines
-Personal Web Project for DDC Fullstack program
+This is my Personal Web Project for the DDC Fullstack program.
