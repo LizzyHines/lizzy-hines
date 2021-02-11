@@ -1,3 +1,11 @@
+p {
+    font-family: 'Barlow', sans-serif;
+}
+
+h3 {
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+
 /*NAVBAR */
 .navbar-brand {
     font-family: 'Lexend Mega', sans-serif;
@@ -10,9 +18,15 @@
 
 /*PHOTO*/
 img[alt="bosque-photo"] {
-    border-left: 50px solid black;
-    border-right: 50px solid black;
+    border-left: 120px solid black;
+    border-right: 120px solid black;
 }
+
+.text {
+    font-family: "Alegreya Sans SC", sans-serif;
+    align-items: center;
+}
+
 
 /*ABOUT-ME*/
 .about-me {
@@ -22,4 +36,14 @@ img[alt="bosque-photo"] {
     text-align: center;
     font-family: 'Barlow', sans-serif;
     font-size: large;
+}
+
+
+/*SKILLS/PORTFOLIO*/
+.portfolio {
+    margin: 0px 30px;
+    border-bottom: 10px solid;
+    border-right: 10px solid;
+    border-left: 10px solid;
+    border-color: rgb(17, 34, 60);
 }
