@@ -1,12 +1,23 @@
 /*NAVBAR */
-.navbar {
-    background-color: #050505; opacity: 0.5;
-    text-color: white;
-    justify-content: center;
+.navbar-brand {
+
+}
+#navbarNav {
+    justify-content: flex-end;
+    font-family: "Alegreya Sans SC", sans-serif;
 }
 
+/*PHOTO*/
 img[alt="bosque-photo"] {
-    width: 100%;
-    height: 100%;
-    margin: 20px;
+    border-left: 170px solid black;
+    border-right: 170px solid black;
+}
+
+/*ABOUT-ME*/
+.about-me {
+    background-color: rgb(17, 34, 60);
+    padding: 2px;
+    color: white;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
 }
