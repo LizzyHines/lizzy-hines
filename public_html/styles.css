@@ -1,9 +1,11 @@
-p {
+h2 {
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+h4 {
     font-family: 'Barlow', sans-serif;
 }
-
-h3 {
-    font-family: "Alegreya Sans SC", sans-serif;
+p {
+    font-family: 'Barlow', sans-serif;
 }
 
 /*NAVBAR */
