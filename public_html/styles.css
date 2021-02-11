@@ -1,6 +1,7 @@
 /*NAVBAR */
 .navbar-brand {
-
+    font-family: 'Lexend Mega', sans-serif;
+    font-weight: 900;
 }
 #navbarNav {
     justify-content: flex-end;
@@ -9,15 +10,16 @@
 
 /*PHOTO*/
 img[alt="bosque-photo"] {
-    border-left: 170px solid black;
-    border-right: 170px solid black;
+    border-left: 50px solid black;
+    border-right: 50px solid black;
 }
 
 /*ABOUT-ME*/
 .about-me {
     background-color: rgb(17, 34, 60);
-    padding: 2px;
+    padding: 20px 5px;
     color: white;
     text-align: center;
     font-family: 'Barlow', sans-serif;
+    font-size: large;
 }
