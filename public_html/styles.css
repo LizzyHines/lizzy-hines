@@ -19,7 +19,8 @@ p {
 }
 
 /*PHOTO*/
-img[alt="bosque-photo"] {
+.photo {
+    background-image: jpg(bosque-photo.jpg);
     border-left: 120px solid black;
     border-right: 120px solid black;
 }
