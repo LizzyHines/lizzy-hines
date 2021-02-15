@@ -20,9 +20,13 @@ p {
 
 /*PHOTO*/
 .photo {
-    background-image: jpg(bosque-photo.jpg);
-    border-left: 120px solid black;
-    border-right: 120px solid black;
+    background-image: url("bosque-photo.jpg");
+}
+
+.my-row {
+    height: 800px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .text {
