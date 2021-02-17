@@ -1,8 +1,11 @@
 const express = require("express")
 const morgan = require("morgan")
 const bodyParser = require("body-parser")
+require('dotenv').config()
+const Recaptcha = require("express-recaptcha").RecaptchaV2
 
 const app = express()
+const recaptcha = new Recaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
 
 app.use(morgan("dev"))
 app.use(express.json())
@@ -16,13 +19,15 @@ const handleGetRequest = (req, res) => {
 }
 
 const handlePostRequest = (request, response, nextFunction) => {
+    response.append("Content-Type", "text/html")
+    response.append("Access-Control-Allow-Origin", "*")
     console.log(request.body)
     return response.json("success")
 }
 
 indexRoute.route("/apis")
     .get(handleGetRequest)
-    .post(handlePostRequest)
+    .post(recaptcha.middleware.verify, handlePostRequest)
 
 app.use("/apis",indexRoute)
 
