@@ -1,3 +1,16 @@
+@media (min-width: 576px) { ... }
+
+@media (min-width: 768px) { ... }
+
+@media (min-width: 992px) { ... }
+
+@media (min-width: 1200px) { ... }
+
+
+
+
+
+
 h2 {
     font-family: "Alegreya Sans SC", sans-serif;
 }
@@ -9,36 +22,33 @@ p {
 }
 
 /*NAVBAR */
-.navbar-brand {
-    font-family: 'Lexend Mega', sans-serif;
-    font-weight: 900;
-}
+
 #navbarNav {
     justify-content: flex-end;
     font-family: "Alegreya Sans SC", sans-serif;
 }
 
 /*PHOTO*/
-.photo {
-    background-image: url("bosque-photo.jpg");
+.about-me {
+    margin: 3vw;
+    padding: 1.5vw;
+    background-color: rgb(17, 34, 60);
+    color: white;
+    text-align: center;
 }
 
-.my-row {
-    height: 800px;
-    justify-content: flex-end;
-    align-items: center;
-}
 
-.text {
-    font-family: "Alegreya Sans SC", sans-serif;
-    align-items: center;
+img[alt="lizzy-rio-bosque"] {
+    height: 50vh;
+    border-color: rgb(17, 34, 60);
+    position: relative;
 }
 
 
 /*ABOUT-ME*/
-.about-me {
+.text {
     background-color: rgb(17, 34, 60);
-    padding: 20px 5px;
+    padding: 0 30px;
     color: white;
     text-align: center;
     font-family: 'Barlow', sans-serif;
@@ -48,9 +58,11 @@ p {
 
 /*SKILLS/PORTFOLIO*/
 .portfolio {
-    margin: 0px 30px;
+    margin: 0 2vw;
+    padding: 0.5vw;
     border-bottom: 10px solid;
     border-right: 10px solid;
     border-left: 10px solid;
     border-color: rgb(17, 34, 60);
+    background-color: white;
 }
