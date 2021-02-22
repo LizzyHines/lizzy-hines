@@ -1,15 +1,8 @@
-@media (min-width: 576px) { ... }
-
-@media (min-width: 768px) { ... }
-
-@media (min-width: 992px) { ... }
-
-@media (min-width: 1200px) { ... }
-
-
-
-
-
+html {
+    background: url("bosque-dusk.jpg");
+    background-position: center center;
+    background-attachment: no-repeat fixed;
+}
 
 h2 {
     font-family: "Alegreya Sans SC", sans-serif;
@@ -30,8 +23,8 @@ p {
 
 /*PHOTO*/
 .about-me {
-    margin: 3vw;
-    padding: 1.5vw;
+    margin: vw;
+    padding: .5vw;
     background-color: rgb(17, 34, 60);
     color: white;
     text-align: center;
@@ -46,9 +39,9 @@ img[alt="lizzy-rio-bosque"] {
 
 
 /*ABOUT-ME*/
-.text {
+.bio {
     background-color: rgb(17, 34, 60);
-    padding: 0 30px;
+    padding: 25px;
     color: white;
     text-align: center;
     font-family: 'Barlow', sans-serif;
@@ -65,4 +58,13 @@ img[alt="lizzy-rio-bosque"] {
     border-left: 10px solid;
     border-color: rgb(17, 34, 60);
     background-color: white;
+}
+
+i {
+    padding: 10px;
+}
+
+.contact-form {
+    padding: 3vh 3vw;
+
 }
