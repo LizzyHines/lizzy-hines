@@ -71,7 +71,7 @@
 <!--SKILLS/PORTFOLIO-->
 <section class="portfolio">
     <div class="container">
-        <div class="row">
+        <div class="row mx-auto">
         <div class="col-lg-6">
             <h2>Technical Skills</h2>
             <div class="row">
@@ -106,73 +106,78 @@
 
 <!--CONTACT FORM-->
 <section class="contact-form">
-    <div class="container-fluid">
+<div class="container-fluid">
+
     <div class="row">
         <div class="col-md-6">
-            <div>
+
+            <div class="contact-text">
                 <h2>Contact Me</h2>
-                <i class="fab fa-github fa-2x"></i>
-                <i class="fab fa-linkedin fa-2x"></i>
+                    <a href="https://github.com/LizzyHines" class="GitHub">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/elizabethhines2140/" class="LinkedIn">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
             </div>
-            <form action="http://localhost:4200/apis/" id="contact" method="post" novalidate>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <div class="input-group">
-                <div class="input-group-prepend">
-            </div>
-            <input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
         </div>
-    </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <div class="input-group">
-            <div class="input-group-prepend">
-            </div>
-            <input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
-        </div>
-    </div>
-        </div>
+
         <div class="col-md-6">
-    <div class="form-group">
-        <label for="subject">Subject</label>
-        <div class="input-group">
-            <div class="input-group-prepend">
-            </div>
-            <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
+
+    <form action="./apis/" id="contact" method="post" novalidate>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+                <div class="input-group">
+                    <div class="input-group-prepend"></div>
+                    <input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
+                </div>
         </div>
-    </div>
-    <div class="form-group">
-        <label for="message">Message</label>
-        <div class="input-group">
-            <div class="input-group-prepend">
-            </div>
-            <textarea class="form-control" id="message" maxlength="2000" name="message"
-                      placeholder="Your Message (2000 characters max)" required
-                      rows="5"></textarea>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+                <div class="input-group">
+                    <div class="input-group-prepend"></div>
+                    <input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
+                </div>
         </div>
-    </div>
+
+        <div class="form-group">
+            <label for="subject">Subject</label>
+                <div class="input-group">
+                    <div class="input-group-prepend"></div>
+                    <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
+                </div>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+                <div class="input-group">
+                    <div class="input-group-prepend"></div>
+                    <textarea class="form-control" id="message" maxlength="2000" name="message" placeholder="Your Message (2000 characters max)" required rows="5"></textarea>
+                </div>
+        </div>
+
     <div class="g-recaptcha" data-sitekey="6LcffVkaAAAAAFMKWZOeyz99BLaNAs723dyg_Dxr"></div>
-    <!-- Make sure to add site key provided by google recaptcha -->
-    <!--  <div class="g-recaptcha" data-sitekey=""></div> -->
-    <button class="btn btn-info" type="submit">Submit</button>
-    <button class="btn btn-default" type="reset">Reset</button>
-        </form>
-<!-- END CONTACT FORM-->
 
-<div id="output-area"></div>
+        <button class="btn btn-info" type="submit">Submit</button>
+        <button class="btn btn-default" type="reset">Reset</button>
+    </form>
+        </div>
+    </div>
 
-        </div><!-- /.col-sm-6 -->
-</div><!-- /.row -->
 </div>
+</section>
 
-<footer class="py-4 text-white">
-    <div class="container">
-        <a class="text-white" href="https://bootcamp-coders.cnm.edu/class-materials/jquery-validated-captcha-form/"
-           target="_blank">Documentation</a> | <a class="text-white" href="https://github.com/rlewis2892/pwp-form-demo"
-                                                  target="_blank">GitHub</a>
+
+<!--FOOTER-->
+
+<footer>
+    <div class="container text-center">
+        <h4>Site made by Lizzy Hines</h4>
     </div>
 </footer>
-</section>
+
 
 
 <!-- Jquery and Bootstrap Dependencies -->
@@ -187,6 +192,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
+
 <!-- jQuery Form, Validate, Additional Methods, -->
 <script crossorigin="anonymous"
         integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="

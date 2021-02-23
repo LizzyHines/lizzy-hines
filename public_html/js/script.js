@@ -5,8 +5,8 @@ $(document).ready(function () {
         errorClass: "alert alert-danger",
         ErrorLabelContainer: "#output-area",
         errorElement: "div",
-        //rules here define what is good or bad input
-        //each rule starts wit the form input element's NAME attribute
+        // rules here define what is good or bad input
+        //each rule starts with the form input element's NAME attribute
         rules: {
             name: {
                 required: true
@@ -20,7 +20,7 @@ $(document).ready(function () {
                 maxlength: 2000
             },
         },
-        Messages: {
+        messages: {
             name: {
                 required: "Name is a required field"
             },
@@ -29,21 +29,24 @@ $(document).ready(function () {
                 required: "Email is a required field"
             }, message: {
                 required: "Message is a required field",
-                maxlength: "Message is too long"
+                maxlength: "Message is to long"
             }
         },
         submitHandler: (form) => {
-            $("contact").ajaxSubmit({
+            $("#contact").ajaxSubmit({
                 type: "POST",
-                url: $("contact").attr('action'),
+                url: $("#contact").attr('action'),
                 success: (ajaxOutput) => {
                     $("output-area").css("display","")
                     $("output-area").html(ajaxOutput)
+
                     if($(".alert-success" >= 1)) {
-                        $("#contact") [0].reset()
+                        $("#contact")[0].reset()
                     }
+
                 }
             })
         }
+
     })
 })

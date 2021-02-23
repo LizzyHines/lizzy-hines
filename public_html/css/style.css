@@ -1,7 +1,7 @@
 html {
     background: url("bosque-dusk.jpg");
     background-position: center center;
-    background-attachment: no-repeat fixed;
+    background-attachment: fixed;
 }
 
 h2 {
@@ -13,6 +13,12 @@ h4 {
 p {
     font-family: 'Barlow', sans-serif;
 }
+
+@media screen and (max-width: 1200px)  {
+
+}
+
+/*--------------------------------------------------------*/
 
 /*NAVBAR */
 
@@ -66,5 +72,4 @@ i {
 
 .contact-form {
     padding: 3vh 3vw;
-
 }
