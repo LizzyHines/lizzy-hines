@@ -1,7 +1,16 @@
-html {
-    background: url("bosque-dusk.jpg");
-    background-position: center center;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("bosque-dusk.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
     background-attachment: fixed;
+    background-size: 100%;
 }
 
 h2 {
@@ -14,9 +23,6 @@ p {
     font-family: 'Barlow', sans-serif;
 }
 
-@media screen and (max-width: 1200px)  {
-
-}
 
 /*--------------------------------------------------------*/
 
@@ -28,19 +34,18 @@ p {
 }
 
 /*PHOTO*/
-.about-me {
-    margin: vw;
+.photo-drawing {
+    margin: 1vw;
     padding: .5vw;
-    background-color: rgb(17, 34, 60);
-    color: white;
+    color: black;
     text-align: center;
 }
 
 
-img[alt="lizzy-rio-bosque"] {
-    height: 50vh;
-    border-color: rgb(17, 34, 60);
-    position: relative;
+.img-me {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(17, 34, 60);
 }
 
 
@@ -57,7 +62,7 @@ img[alt="lizzy-rio-bosque"] {
 
 /*SKILLS/PORTFOLIO*/
 .portfolio {
-    margin: 0 2vw;
+    margin: 0 4vw;
     padding: 0.5vw;
     border-bottom: 10px solid;
     border-right: 10px solid;
@@ -72,4 +77,8 @@ i {
 
 .contact-form {
     padding: 3vh 3vw;
+}
+
+footer {
+
 }

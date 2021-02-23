@@ -23,7 +23,7 @@
 
 <!--NAVBAR-->
 <div class="mynav">
-<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
     <a class="navbar-brand" href="#">LIZZY HINES</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,16 +45,16 @@
 </div>
 
 <!--COVER BOX-->
-<section class="about-me">
-    <div class="container">
+<section class="photo-drawing">
+    <div class="container-fluid justify-content-center">
         <h1>Lizzy Hines</h1>
         <h2>Web Developer | Artist</h2>
-    <div class="row justify-content-space-between">
-        <div class="col m-1 p-2">
-            <img src="./images/lizzy-rio-bosque.jpg" alt="lizzy-rio-bosque">
+    <div class="row">
+        <div class="col-md-6 p-1">
+            <img class="img-me" src="./images/lizzy-rio-bosque.jpg" alt="lizzy-rio-bosque">
         </div>
-        <div class="col m-1 p-2">
-            <img src="./images/lizzy-rio-bosque.jpg" alt="lizzy-rio-bosque">
+        <div class="col-md-6 p-1">
+            <img class="img-me" src="./images/lizzy-rio-bosque.jpg" alt="lizzy-rio-bosque">
         </div>
     </div>
     </div>
@@ -70,24 +70,20 @@
 
 <!--SKILLS/PORTFOLIO-->
 <section class="portfolio">
-    <div class="container">
-        <div class="row mx-auto">
-        <div class="col-lg-6">
-            <h2>Technical Skills</h2>
+    <div class="container justify-content-center">
+        <div>
+            <h2 class="text-center">Technical Skills</h2>
             <div class="row">
-                <div class="col">
+                <div class="col justify-content-space-between">
                     <i class="fab fa-html5 fa-4x"></i>
+                    <i class="fas fa-terminal fa-4x"></i>
                     <i class="fab fa-css3-alt fa-4x"></i>
                 </div>
                 <div class="col">
-                    <i class="fab fa-react fa-4x"></i>
                     <i class="fab fa-bootstrap fa-4x"></i>
-                </div>
-                <div class="col">
-                    <i class="fas fa-terminal fa-4x"></i>
+                    <i class="fab fa-react fa-4x"></i>
                     <i class="fab fa-js fa-4x"></i>
                 </div>
-            </div>
             </div>
         </div>
         <div class="col-lg-6">
@@ -111,8 +107,8 @@
     <div class="row">
         <div class="col-md-6">
 
-            <div class="contact-text">
-                <h2>Contact Me</h2>
+            <div class="contact-text content-center">
+                <h1>Contact Me</h1>
                     <a href="https://github.com/LizzyHines" class="GitHub">
                         <i class="fab fa-github fa-2x"></i>
                     </a>
@@ -157,11 +153,15 @@
                     <textarea class="form-control" id="message" maxlength="2000" name="message" placeholder="Your Message (2000 characters max)" required rows="5"></textarea>
                 </div>
         </div>
-
-    <div class="g-recaptcha" data-sitekey="6LcffVkaAAAAAFMKWZOeyz99BLaNAs723dyg_Dxr"></div>
-
-        <button class="btn btn-info" type="submit">Submit</button>
-        <button class="btn btn-default" type="reset">Reset</button>
+    <div class="row justify-content-start">
+        <div class="col-md-3">
+            <div class="g-recaptcha" data-sitekey="6LcffVkaAAAAAFMKWZOeyz99BLaNAs723dyg_Dxr"></div>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-info" type="submit">Submit</button>
+            <button class="btn btn-default" type="reset">Reset</button>
+        </div>
+    </div>
     </form>
         </div>
     </div>
