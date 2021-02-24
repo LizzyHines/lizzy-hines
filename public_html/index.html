@@ -8,9 +8,9 @@
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
-<!--ALEGRAYA SANS FONT-->
+<!--PERMANENT MARKER FONT-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 <!--BARLOW FONT-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
@@ -23,8 +23,8 @@
 
 <!--NAVBAR-->
 <div class="mynav">
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <a class="navbar-brand" href="#">LIZZY HINES</a>
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">LH</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,7 +34,7 @@
                 <a class="nav-link" href="#">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">PORTFOLIO</a>
+                <a class="nav-link" href="#">WHAT I DO</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">CONTACT</a>
@@ -45,24 +45,18 @@
 </div>
 
 <!--COVER BOX-->
-<section class="photo-drawing">
-    <div class="container-fluid justify-content-center">
+<section class="cover">
+    <div class="container-fluid mx-auto justify-content-center">
         <h1>Lizzy Hines</h1>
-        <h2>Web Developer | Artist</h2>
     <div class="row">
         <div class="col-md-6 p-1">
             <img class="img-me" src="./images/lizzy-rio-bosque.jpg" alt="lizzy-rio-bosque">
         </div>
         <div class="col-md-6 p-1">
-            <img class="img-me" src="./images/lizzy-rio-bosque.jpg" alt="lizzy-rio-bosque">
+            <img class="img-me" src="./images/drawing.jpg" alt="drawing-flipped">
         </div>
     </div>
-    </div>
-</section>
-
-
-<section class="bio">
-    <div class="container-fluid">
+        <h2>web developer + creative</h2>
         <p class="text">When I was young I studied art. In college I studied the humanities. Both helped me understand this beautiful world I've been fortunate to be a part of. <br>In learning to code I look forward to better supporting my community that has always helped me thrive.</p>
     </div>
 </section>
@@ -71,31 +65,42 @@
 <!--SKILLS/PORTFOLIO-->
 <section class="portfolio">
     <div class="container justify-content-center">
-        <div>
-            <h2 class="text-center">Technical Skills</h2>
-            <div class="row">
-                <div class="col justify-content-space-between">
-                    <i class="fab fa-html5 fa-4x"></i>
-                    <i class="fas fa-terminal fa-4x"></i>
-                    <i class="fab fa-css3-alt fa-4x"></i>
+        <h1>So, what do I do?</h1>
+        <p>For the last several weeks I've been in an intensive computer coding program learning Fullstack Web Development. <br>It hasn't been easy, but the most fulfilling things in life never are.</p>
+        <div class="row">
+        <div class="col-md-6">
+            <h2>Technical Skills</h2>
+            <p>A FEW THINGS I NOW HAVE EXPERIENCE WITH</p>
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-xs">
+                        <i class="fab fa-html5 fa-4x"></i>
+                        <i class="fab fa-css3-alt fa-4x"></i>
+                        <i class="fab fa-bootstrap fa-4x"></i>
+                    </div>
+                    <div class="col-xs">
+                        <i class="fab fa-js fa-4x"></i>
+                        <i class="fab fa-react fa-4x"></i>
+                    </div>
                 </div>
-                <div class="col">
-                    <i class="fab fa-bootstrap fa-4x"></i>
-                    <i class="fab fa-react fa-4x"></i>
-                    <i class="fab fa-js fa-4x"></i>
+                <div class="row justify-content-center">
+                    <div class="col-xs">
+                        <i class="fas fa-terminal fa-3x"></i>
+                        <i class="fab fa-git fa-4x"></i>
+                    </div>
+                    <div class="col-xs">
+                        <i class="fab fa-docker fa-4x"></i>
+                        <i class="fas fa-database fa-4x"></i>
+                    </div>
                 </div>
-            </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-md-6">
             <h2>Portfolio</h2>
-            <h4><a href="url">SaluDuo</a></h4>
-            <p>A bilingual English and Spanish health portal, implementing API of health articles in both languages.</p>
-            <h4><a href="url">Project</a></h4>
-            <p>And blowing into maximum warp speed, you appeared for an instant to be in two places at once.</p>
-            <h4><a href="url">Project</a></h4>
-            <p>And blowing into maximum warp speed, you appeared for an instant to be in two places at once.</p>
+            <p>SOMETHING I'VE BEEN WORKING ON</p>
+            <h4><a href="url" class="SaluDuo">SaluDuo</a></h4>
+            <p>A bilingual English and Spanish health portal, implementing third-party API with health articles in both languages.</p>
+            <p>...and many other cool things to come...</p>
         </div>
-        </div>
+    </div>
     </div>
 </section>
 
@@ -103,24 +108,20 @@
 <!--CONTACT FORM-->
 <section class="contact-form">
 <div class="container-fluid">
+    <form action="./apis/" id="contact" method="post" novalidate>
+
+        <div class="contact-text">
+            <h1>Contact Me</h1>
+            <a href="https://github.com/LizzyHines" class="GitHub">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/elizabethhines2140/" class="LinkedIn">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+        </div>
 
     <div class="row">
         <div class="col-md-6">
-
-            <div class="contact-text content-center">
-                <h1>Contact Me</h1>
-                    <a href="https://github.com/LizzyHines" class="GitHub">
-                        <i class="fab fa-github fa-2x"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/elizabethhines2140/" class="LinkedIn">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-
-    <form action="./apis/" id="contact" method="post" novalidate>
 
         <div class="form-group">
             <label for="name">Name</label>
@@ -146,6 +147,10 @@
                 </div>
         </div>
 
+        </div>
+
+        <div class="col-md-6">
+
         <div class="form-group">
             <label for="message">Message</label>
                 <div class="input-group">
@@ -153,18 +158,17 @@
                     <textarea class="form-control" id="message" maxlength="2000" name="message" placeholder="Your Message (2000 characters max)" required rows="5"></textarea>
                 </div>
         </div>
-    <div class="row justify-content-start">
-        <div class="col-md-3">
+
             <div class="g-recaptcha" data-sitekey="6LcffVkaAAAAAFMKWZOeyz99BLaNAs723dyg_Dxr"></div>
-        </div>
-        <div class="col-md-3">
-            <button class="btn btn-info" type="submit">Submit</button>
-            <button class="btn btn-default" type="reset">Reset</button>
+
+            <button class="btn btn-outline-light" type="submit">Submit</button>
+            <button class="btn btn-outline-light" type="reset">Reset</button>
+
+    <div id="output-area"></div>
         </div>
     </div>
+
     </form>
-        </div>
-    </div>
 
 </div>
 </section>
@@ -174,7 +178,7 @@
 
 <footer>
     <div class="container text-center">
-        <h4>Site made by Lizzy Hines</h4>
+        <h4>site made by lizzy hines</h4>
     </div>
 </footer>
 

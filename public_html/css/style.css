@@ -6,21 +6,20 @@
 }
 
 body {
-    background-image: url("bosque-dusk.jpg");
-    background-repeat: no-repeat;
-    background-position: top left;
+    background-image: url("../images/river-background.jpg");
     background-attachment: fixed;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
-h2 {
-    font-family: "Alegreya Sans SC", sans-serif;
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
 }
-h4 {
+
+h2, h4, p {
     font-family: 'Barlow', sans-serif;
-}
-p {
-    font-family: 'Barlow', sans-serif;
+    text-align: center;
 }
 
 
@@ -30,44 +29,35 @@ p {
 
 #navbarNav {
     justify-content: flex-end;
-    font-family: "Alegreya Sans SC", sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
-/*PHOTO*/
-.photo-drawing {
-    margin: 1vw;
-    padding: .5vw;
-    color: black;
+/*PHOTO-DRAWING COVER*/
+.cover {
+    margin-top: 3rem;
+    padding: 2rem;
+    color: white;
     text-align: center;
+    background-color: rgb(17, 34, 60);
 }
 
 
 .img-me {
     width: 100%;
     padding: 10px;
-    background-color: rgb(17, 34, 60);
+    margin: 6px;
+    background-color: rgb(28, 54, 92);
 }
-
-
-/*ABOUT-ME*/
-.bio {
-    background-color: rgb(17, 34, 60);
-    padding: 25px;
-    color: white;
-    text-align: center;
-    font-family: 'Barlow', sans-serif;
-    font-size: large;
-}
-
 
 /*SKILLS/PORTFOLIO*/
 .portfolio {
-    margin: 0 4vw;
-    padding: 0.5vw;
-    border-bottom: 10px solid;
+    margin: 4vw 4vw 2vw 4vw;
+    padding: 4vw;
+    border-top: 10px solid;
     border-right: 10px solid;
     border-left: 10px solid;
-    border-color: rgb(17, 34, 60);
+    border-bottom: 10px solid;
+    border-color: rgb(28, 54, 92);
     background-color: white;
 }
 
@@ -75,10 +65,30 @@ i {
     padding: 10px;
 }
 
+/*CONTACT FORM*/
 .contact-form {
-    padding: 3vh 3vw;
+    padding: 1vh 3vw;
+    color: white;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+a.GitHub {
+    color: rgb(28, 54, 92);
+}
+
+a.LinkedIn {
+    color: rgb(28, 54, 92)
+}
+
+.form-group {
+    border: 2px rgb(28, 54, 92);
 }
 
 footer {
-
+    padding: 2vh;
+    margin: 3vh;
+    color: white;
 }

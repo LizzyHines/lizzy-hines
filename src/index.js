@@ -34,7 +34,7 @@ const handleGetRequest = (req, res) => {
     return res.json("The express server is live 😼")
 }
 
-const handlePostRequest = (request, response, nextFunction) => {
+const handlePostRequest = (request, response) => {
     response.append("Content-Type", "text/html")
 
 
