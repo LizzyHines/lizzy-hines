@@ -17,7 +17,7 @@ h1 {
     text-align: center;
 }
 
-h2, h4, p {
+h2, h4, h5, p {
     font-family: 'Barlow', sans-serif;
     text-align: center;
 }
@@ -33,9 +33,9 @@ h2, h4, p {
 }
 
 /*PHOTO-DRAWING COVER*/
-.cover {
+.about {
     margin-top: 3rem;
-    padding: 2rem;
+    padding: 6vh;
     color: white;
     text-align: center;
     background-color: rgb(17, 34, 60);
@@ -44,15 +44,19 @@ h2, h4, p {
 
 .img-me {
     width: 100%;
-    padding: 10px;
-    margin: 6px;
+    padding: 5px;
+    margin: 5px;
     background-color: rgb(28, 54, 92);
+}
+
+.about-me {
+    padding-top: 2vh;
 }
 
 /*SKILLS/PORTFOLIO*/
 .portfolio {
     margin: 4vw 4vw 2vw 4vw;
-    padding: 4vw;
+    padding: 2vw;
     border-top: 10px solid;
     border-right: 10px solid;
     border-left: 10px solid;
