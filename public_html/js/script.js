@@ -29,7 +29,7 @@ $(document).ready(function () {
                 required: "Email is a required field"
             }, message: {
                 required: "Message is a required field",
-                maxlength: "Message is to long"
+                maxlength: "Message is too long"
             }
         },
         submitHandler: (form) => {
