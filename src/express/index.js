@@ -75,7 +75,7 @@ indexRoute.route("/")
     .post(recaptcha.middleware.verify, validation, handlePostRequest)
 
 app.use("/apis", indexRoute)
-app.use("/.netlify/functions/server", indexRoute)
+app.use("/.netlify/lambda", indexRoute)
 app.use(express.static("../public_html"));
 
 
