@@ -4,6 +4,7 @@ const bodyParser = require("body-parser")
 const Recaptcha = require("express-recaptcha").RecaptchaV2
 const mailgun = require("mailgun-js")
 const {check, validationResult} = require("express-validator")
+require("dotenv").config()
 
 
 
@@ -73,7 +74,10 @@ indexRoute.route("/")
     .get(handleGetRequest)
     .post(recaptcha.middleware.verify, validation, handlePostRequest)
 
-app.use("/apis",indexRoute)
+app.use("/apis", indexRoute)
+app.use("/.netlify/functions/server", indexRoute)
+app.use(express.static("../public_html"));
+
 
 app.listen(4200, () => {
     console.log("Express Successfully built")

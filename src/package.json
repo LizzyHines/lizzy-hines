@@ -4,15 +4,18 @@
   "description": "contact form",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "node express/index.js",
+    "build": "netlify-lambda build express",
+    "postinstall": "netlify-lambda install"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-recaptcha": "^5.0.2",
     "express-validator": "^6.5.0",
     "mailgun-js": "^0.22.0",
     "morgan": "^1.9.1",
-    "express-recaptcha": "^5.0.2"
+    "netlify-lambda": "^2.0.15"
   }
 }
