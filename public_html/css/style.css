@@ -35,7 +35,7 @@ h2, h4, h5, p {
 /*PHOTO-DRAWING COVER*/
 .about {
     margin-top: 4vh;
-    padding: 6vh;
+    padding: 5vh;
     color: white;
     text-align: center;
     background-color: rgb(17, 34, 60);
@@ -69,6 +69,15 @@ i {
     padding: 10px;
 }
 
+/*FUN*/
+.fun {
+    color: white;
+    background: rgba(17, 34, 60, 0.9);
+    margin: 25px;
+    padding: 3vw;
+    /*border: 10px solid rgb(17, 34, 60);*/
+}
+
 /*CONTACT FORM*/
 .contact-form {
     padding: 1vh 3vw;
@@ -79,17 +88,13 @@ i {
     text-align: center;
 }
 
-a.GitHub {
-    color: rgb(28, 54, 92);
+.icon {
+    color: rgb(0, 0, 0);
 }
 
-a.LinkedIn {
-    color: rgb(28, 54, 92)
-}
-
-.form-group {
-    border: 2px rgb(28, 54, 92);
-}
+/*.form-group {
+    border: 2px solid rgb(28, 54, 92);
+}*/
 
 footer {
     padding: 2vh;
