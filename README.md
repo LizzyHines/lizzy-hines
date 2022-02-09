@@ -1,2 +1,2 @@
 # lizzy-hines
-This is my Personal Website.
+This is my personal website.
