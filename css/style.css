@@ -9,7 +9,7 @@ body {
     background-image: url("../images/river-background.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
 }
 
 h1 {
