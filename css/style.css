@@ -9,7 +9,7 @@ body {
     background-image: url("../images/river-background.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 h1 {
@@ -89,7 +89,7 @@ i {
 }
 
 .icon {
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 /*.form-group {
