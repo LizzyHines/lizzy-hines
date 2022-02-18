@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("../images/river-background.jpg");
+    background-image: url("./images/river-background.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -57,12 +57,20 @@ h2, h3, h4, h5, p {
 .portfolio {
     margin: 4vw;
     padding: 2vw;
-    border: 10px solid rgb(28, 54, 92);
+    border-top: 10px solid;
+    border-right: 10px solid;
+    border-left: 10px solid;
+    border-bottom: 10px solid;
+    border-color: rgb(28, 54, 92);
     background-color: white;
 }
 
 i {
     padding: 10px;
+}
+
+i:hover {
+
 }
 
 /*CONTACT FORM*/
