@@ -17,7 +17,7 @@ h1 {
     text-align: center;
 }
 
-h2, h4, h5, p {
+h2, h3, h4, h5, p {
     font-family: 'Barlow', sans-serif;
     text-align: center;
 }
@@ -34,7 +34,7 @@ h2, h4, h5, p {
 
 /*PHOTO-DRAWING COVER*/
 .about {
-    margin-top: 4vh;
+    margin-top: 5vh;
     padding: 5vh;
     color: white;
     text-align: center;
@@ -55,7 +55,7 @@ h2, h4, h5, p {
 
 /*SKILLS/PORTFOLIO*/
 .portfolio {
-    margin: 4vw 4vw 2vw 4vw;
+    margin: 4vw;
     padding: 2vw;
     border-top: 10px solid;
     border-right: 10px solid;
@@ -69,22 +69,33 @@ i {
     padding: 10px;
 }
 
-/*FUN*/
+i:hover {
+
+}
+
+/*FUN
 .fun {
     color: white;
     background: rgba(17, 34, 60, 0.9);
     margin: 25px;
     padding: 3vw;
-    /*border: 10px solid rgb(17, 34, 60);*/
-}
+    border: 10px solid rgb(17, 34, 60);
+}*/
 
 /*CONTACT FORM*/
 .contact-form {
-    padding: 1vh 3vw;
+    margin-bottom: 3vh;
+    padding: 1vh 2vw;
     color: white;
+    font-family: 'Barlow', sans-serif;
 }
 
-.contact-text {
+/*.contact-text {
+    border: 2px solid black;
+    background-color: black;
+}*/
+
+.contact-heading {
     text-align: center;
 }
 
@@ -97,7 +108,6 @@ i {
 }*/
 
 footer {
-    padding: 2vh;
-    margin: 3vh;
+    margin: 1vh;
     color: white;
 }
