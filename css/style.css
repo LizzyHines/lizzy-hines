@@ -27,6 +27,10 @@ h2, h3, h4, h5, p {
 
 /*NAVBAR */
 
+.mynav {
+    padding-bottom: 25px;
+}
+
 #navbarNav {
     justify-content: flex-end;
     font-family: 'Barlow', sans-serif;
@@ -34,7 +38,7 @@ h2, h3, h4, h5, p {
 
 /*PHOTO-DRAWING COVER*/
 .about {
-    height: 96vh;
+    height: 93vh;
     margin-top: 4vh;
     padding: 5vh;
     color: white;
