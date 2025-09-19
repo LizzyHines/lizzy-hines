@@ -10,6 +10,8 @@ body {
     background-attachment: fixed !important;
     background-repeat: no-repeat;
     background-position: bottom;
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6;
 }
 
 h1 {
@@ -18,7 +20,6 @@ h1 {
 }
 
 h2, h3, h4, h5, p {
-    font-family: 'Barlow', sans-serif;
     text-align: center;
 }
 
@@ -27,10 +28,26 @@ h2, h3, h4, h5, p {
 
 /*NAVBAR */
 
+.navbar {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
 
-#navbarNav {
+.navlogo {
+    margin-left: 2rem;
+}
+
+.navlist {
     justify-content: flex-end;
-    font-family: 'Barlow', sans-serif;
+    align-items: center;
+    color: #1c365c; 
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 /*PHOTO-DRAWING COVER*/
