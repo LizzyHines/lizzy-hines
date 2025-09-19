@@ -136,8 +136,12 @@ h1 {
 }
 
 .about-me h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 48px;
+}
+
+.about-me h3 {
+    margin-bottom: 1rem;
 }
 
 .about-details {
@@ -164,14 +168,15 @@ h1 {
         margin-bottom: 3rem;
     }
     .about-img {
-        margin-top: 5vh;
+        margin-top: 8vh;
+        width: 60%;
     }
 }
 
 @media (max-width: 768px) {
     .about-img {
-        width: 80%;
         margin-top: 0;
+        width: 80%;
     }
     .about-me {
         padding: 2rem 0 0 0;
@@ -189,22 +194,62 @@ h1 {
 }
 
 .portfolio p {
-    width: 30rem;
+    width: 90%;
 }
 
-i {
-    padding: 10px;
+
+.skill-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    height: 10rem;
 }
+
+.card {
+    position: relative;
+    background: #1c365c;
+    color: #e3e3e3;
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 51px 8px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.default-text {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+/* hidden card text */
+.card .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.card:hover .text-default {
+    opacity: 0;
+}
+.card:hover .text-hover {
+    opacity: 1;
+}
+
+
+
+
+/* i {
+    padding: 10px;
+} */
 
 @media (max-width: 768px) {
     .portfolio p {
         width: fit-content;
-    }
-    .about-img {
-        width: 22rem;
-    }
-    .about-me {
-        padding: 2rem 0 0 0;
     }
 }
 
