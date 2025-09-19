@@ -180,10 +180,6 @@ i {
     padding: 10px;
 }
 
-i:hover {
-
-}
-
 @media (max-width: 768px) {
     .portfolio p {
         width: fit-content;
