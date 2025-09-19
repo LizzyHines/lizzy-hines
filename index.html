@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--BOOTSTRAP CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <!--PERMANENT MARKER FONT-->
@@ -28,21 +27,25 @@
 <body>
 
 <!--NAVBAR-->
-<header class="mynav">
+<header>
     <nav class="navbar">
-        <a class="navlogo" href="https://www.linkedin.com/in/elizabethhines2140/">
+        <a class="nav-logo" href="https://www.linkedin.com/in/elizabethhines2140/">
             <img src="/images/lizzy-logo.png" alt="Logo" width="40" height="40">
         </a>
-        <div class="navlist">
-            <ul class="navlinks">
-                <li class="nav-item">
-                    <a class="nav-link" href="#cover">ABOUT</a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <div class="nav-list">
+            <ul class="nav-links">
+                <li>
+                    <a href="about-me.html">ABOUT</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#what-i-do">WHAT I DO</a>
+                <li>
+                    <a href="portfolio.html">PORTFOLIO</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">CONTACT</a>
+                <li>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -51,49 +54,54 @@
 
 <!--COVER BOX-->
 <section class="about" id="cover">
-    <div class="container-fluid mx-auto justify-content-center">
-        <h1 class="m-2">Lizzy Hines</h1>
-        <div class="row">
-            <div class="col-md-6">
-                <img class="img-me" src="./images/lizzy-rio-bosque.jpg" alt="lizzy at the Bosque">
-            </div>
+        <div>
+            <img class="about-img" src="./images/lizzy-rio-bosque.jpg" alt="lizzy at the Bosque">
         </div>
-        <h2 class="about-me">web developer + creative</h2>
-        <p>When I was young I studied art. In college I studied the humanities.<br>Now, coding helps me further explore and understand the world around me.</p>
-    </div>
+        <div class="about-me">
+            <h1>Lizzy Hines</h1>
+            <h3>
+                <ul class="about-details">
+                    <li>UI/UX</li>
+                    <li>Web Accessibility</li>
+                    <li>Salesforce</li>
+                    <li>Visual Arts</li>
+                </ul>
+            </h3>
+        </div>
 </section>
 
 
 <!--SKILLS/PORTFOLIO-->
-<section class="portfolio" id="what-i-do">
-    <div class="container justify-content-center">
-        <h1 class="m-2">So, what do I do?</h1>
-        <p>I am a web developer with a background in teaching and design.<br>I'm passionate about creating effective, accessible tools and products.</p>
-        <div class="row">
-            <div class="col-md-6 mt-2">
-                <h2>Technical Skills</h2>
-                <p>A FEW THINGS I HAVE EXPERIENCE WITH</p>
-                <div class="d-flex justify-content-center">
-                    <i class="fab fa-html5 fa-4x" title="HTML5"></i>
-                    <i class="fab fa-css3-alt fa-4x" title="CSS3"></i>
-                    <i class="fab fa-bootstrap fa-4x" title="Bootstrap"></i>
-                    <i class="fab fa-react fa-4x" title="React"></i>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <i class="fab fa-js fa-4x" title="JavaScript"></i>
-                    <i class="fab fa-git fa-4x" title="Git"></i>
-                    <i class="fab fa-docker fa-4x" title="Docker"></i>
-                    <i class="fas fa-database fa-4x" title="Data Design"></i>
-                </div>
+<section class="portfolio">
+    <h1>So, what do I do?</h1>
+    <p>I am a UI/UX designer and developer with a background in the visual arts, studied the humanities in college, and I enjoy being able to bring human elements into everything I design and code. I am passionate about building accessible tools and products to better serve my community.</p>
+
+
+    <h2>UI/UX DESIGN</h2>
+    <div class="row">
+        <div class="col-md-6 mt-2">
+            <h2>Technical Skills</h2>
+            <p>A FEW THINGS I HAVE EXPERIENCE WITH</p>
+            <div class="d-flex justify-content-center">
+                <i class="fab fa-html5 fa-4x" title="HTML5"></i>
+                <i class="fab fa-css3-alt fa-4x" title="CSS3"></i>
+                <i class="fab fa-bootstrap fa-4x" title="Bootstrap"></i>
+                <i class="fab fa-react fa-4x" title="React"></i>
             </div>
-            <div class="col-md-6 mt-2">
-                <h2>Portfolio</h2>
-                <p>WHAT I'VE BEEN WORKING ON</p>
-                <h5><a href="https://github.com/web-health-portal/portal-capstone" class="SaluDuo">SaluDuo</a></h5>
-                <p>A bilingual English and Spanish health portal, implementing third-party API with health articles in both languages.</p>
-                <h5><a href="https://github.com/LizzyHines/silicon-valley-ipsum" class="Silicon Valley Ipsum">Silicon Valley Ipsum</a></h5>
-                <p>Making the world a better place, one sentence of filler text at a time.</p>
+            <div class="d-flex justify-content-center">
+                <i class="fab fa-js fa-4x" title="JavaScript"></i>
+                <i class="fab fa-git fa-4x" title="Git"></i>
+                <i class="fab fa-docker fa-4x" title="Docker"></i>
+                <i class="fas fa-database fa-4x" title="Data Design"></i>
             </div>
+        </div>
+        <div class="col-md-6 mt-2">
+            <h2>Portfolio</h2>
+            <p>WHAT I'VE BEEN WORKING ON</p>
+            <h5><a href="https://github.com/web-health-portal/portal-capstone" class="SaluDuo">SaluDuo</a></h5>
+            <p>A bilingual English and Spanish health portal, implementing third-party API with health articles in both languages.</p>
+            <h5><a href="https://github.com/LizzyHines/silicon-valley-ipsum" class="Silicon Valley Ipsum">Silicon Valley Ipsum</a></h5>
+            <p>Making the world a better place, one sentence of filler text at a time.</p>
         </div>
     </div>
 </section>
@@ -111,70 +119,67 @@
 
 <!--CONTACT FORM-->
 <section class="contact-form">
-    <div class="container-fluid">
-        <form id="contact" netlify>
+    <form id="contact" netlify>
 
-            <div class="contact-heading">
-                <h1>Contact Me</h1>
-                <a href="https://github.com/LizzyHines" class="icon">
-                    <i class="fab fa-github-square fa-2x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/elizabethhines2140/" class="icon">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-            </div>
+        <div class="contact-heading">
+            <h1>Contact Me</h1>
+            <a href="https://github.com/LizzyHines" class="icon">
+                <i class="fab fa-github-square fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/elizabethhines2140/" class="icon">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+        </div>
 
-            <div class="row contact-text justify-content-center">
-                <div class="col-md-4">
+        <div class="row contact-text justify-content-center">
+            <div class="col-md-4">
 
-                    <div class="form-group m-1">
-                        <h4>Name</h4>
-                        <div class="input-group-prepend"></div>
-                        <input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
-                    </div>
-
-                    <div class="form-group m-1">
-                        <h4>Email</h4>
-                        <div class="input-group-prepend"></div>
-                        <input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
-                    </div>
-
-                    <div class="form-group m-1">
-                        <h4>Subject</h4>
-                        <div class="input-group-prepend"></div>
-                        <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
-                    </div>
-
+                <div class="form-group m-1">
+                    <h4>Name</h4>
+                    <div class="input-group-prepend"></div>
+                    <input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
                 </div>
 
-                <div class="col-md-4">
-
-                    <div class="form-group m-1">
-                        <h4>Message</h4>
-                        <div class="input-group-prepend"></div>
-                        <textarea class="form-control" id="message" maxlength="2000" name="message" placeholder="What would you like to build together?" required rows="8"></textarea>
-                    </div>
-                    <!--recaptcha
-                        <div class="g-recaptcha" data-sitekey="6LcffVkaAAAAAFMKWZOeyz99BLaNAs723dyg_Dxr"></div>
-                        <div id="output-area"></div>-->
+                <div class="form-group m-1">
+                    <h4>Email</h4>
+                    <div class="input-group-prepend"></div>
+                    <input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
                 </div>
+
+                <div class="form-group m-1">
+                    <h4>Subject</h4>
+                    <div class="input-group-prepend"></div>
+                    <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
+                </div>
+
             </div>
-            <div class="d-flex justify-content-center">
 
-                <button class="btn btn-outline-light m-2" type="submit">Submit</button>
-                <button class="btn btn-outline-light m-2" type="reset">Reset</button>
+            <div class="col-md-4">
 
+                <div class="form-group m-1">
+                    <h4>Message</h4>
+                    <div class="input-group-prepend"></div>
+                    <textarea class="form-control" id="message" maxlength="2000" name="message" placeholder="What would you like to build together?" required rows="8"></textarea>
+                </div>
+                <!--recaptcha
+                    <div class="g-recaptcha" data-sitekey="6LcffVkaAAAAAFMKWZOeyz99BLaNAs723dyg_Dxr"></div>
+                    <div id="output-area"></div>-->
             </div>
-        </form>
+        </div>
+        <div class="buttons">
 
-    </div>
+            <button class="btn" type="submit">Submit</button>
+            <button class="btn" type="reset">Reset</button>
+
+        </div>
+    </form>
 </section>
 
 
 <!--FOOTER-->
 
 <footer>
-    <div class="container text-center">
+    <div>
         <h5>site made by lizzy hines</h5>
     </div>
 </footer>
@@ -184,7 +189,6 @@
 <!-- Popper.js, then Bootstrap JS -->
 <!-- Make sure to use Jquery min and not the slim version provided by Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 <!-- Google reCAPTCHA-->
 <script src="https://www.google.com/recaptcha/api.js"></script>

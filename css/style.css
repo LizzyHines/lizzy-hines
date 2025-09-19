@@ -16,11 +16,7 @@ body {
 
 h1 {
     font-family: 'Permanent Marker', cursive;
-    text-align: center;
-}
-
-h2, h3, h4, h5, p {
-    text-align: center;
+    font-size: 700;
 }
 
 
@@ -29,55 +25,155 @@ h2, h3, h4, h5, p {
 /*NAVBAR */
 
 .navbar {
-    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #e3e3e3;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+    box-shadow: 0px 0.12px 5px #3a3a3a;
+}
+
+
+#menu-toggle {
+  display: none;
+}
+
+.nav-logo {
+    margin-top: .5rem;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-list {
     align-items: center;
 }
 
-.navlogo {
-    margin-left: 2rem;
-}
-
-.navlist {
-    justify-content: flex-end;
-    align-items: center;
-    color: #1c365c; 
-}
-
-.navlinks {
+.nav-links {
     list-style: none;
     display: flex;
-    align-items: center;
+    gap: 1.5rem;
 }
 
-/*PHOTO-DRAWING COVER*/
+.nav-links a {
+  position: relative;
+  color: #3a3a3a;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+/* Animated underline effect */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #3a3a3a;
+  transition: width 0.4s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Active link */
+.nav-links a.active::after {
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  .nav-logo {
+    margin: 0;
+  }
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
+/*------------------------------------About COVER*/
 .about {
-    height: 96vh;
-    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-top: 5vh;
     padding: 5vh;
-    color: white;
-    text-align: center;
-    background-color: rgb(17, 34, 60);
+    color: #e3e3e3;
+    text-align: left;
+    background-color: #11223c;
 }
 
 
-.img-me {
-    width: 100%;
+.about-img {
+    width: 40rem;
     padding: 5px;
     margin: 5px;
-    background-color: rgb(28, 54, 92);
+    background-color: #1c365c;
+    border-radius: 20px;
 }
 
 .about-me {
-    padding-top: 2vh;
+    padding: 6rem 0 2rem 2rem;
+    flex-direction: column;
 }
 
-/*SKILLS/PORTFOLIO*/
+.about-me h1 {
+    margin-bottom: 1rem;
+    font-size: 48px;
+}
+
+.about-details {
+    list-style: none;
+}
+
+.about-details li {
+    margin-top: .5rem;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .about-img {
+        width: 22rem;
+    }
+    .about-me {
+        padding: 2rem 0 0 0;
+    }
+}
+
+/*------------------------------------SKILLS/PORTFOLIO*/
 .portfolio {
     margin: 4vw;
     padding: 2vw;
-    border: 10px solid rgb(28, 54, 92);
-    background-color: white;
+    border: 10px solid #1c365c;
+    background-color: #e3e3e3;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio p {
+    width: 30rem;
 }
 
 i {
@@ -86,6 +182,18 @@ i {
 
 i:hover {
 
+}
+
+@media (max-width: 768px) {
+    .portfolio p {
+        width: fit-content;
+    }
+    .about-img {
+        width: 22rem;
+    }
+    .about-me {
+        padding: 2rem 0 0 0;
+    }
 }
 
 /*FUN
@@ -97,12 +205,14 @@ i:hover {
     border: 10px solid rgb(17, 34, 60);
 }*/
 
-/*CONTACT FORM*/
+/*---------------------------------------CONTACT FORM*/
 .contact-form {
     margin-bottom: 3vh;
     padding: 1vh 2vw;
     color: white;
     font-family: 'Barlow', sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 .form-control {
@@ -111,15 +221,51 @@ i:hover {
 
 .contact-heading {
     text-align: center;
+    background-color: #11223c;
+    border-radius: 95px;
+    width: 25rem;
+    padding: 2rem .5rem;
 }
 
 .icon {
     color: white;
 }
 
-/*FOOTER*/
+.buttons {
+    padding: .5rem;
+}
+
+.btn {
+    padding: .5rem;
+}
+
+/*-----------------------------------FOOTER*/
 
 footer {
     margin: 1vh;
     color: white;
+    text-align: center;
+}
+
+/*Responsive menu*/
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #333;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+  }
+
+  /* Show menu when checked */
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
 }
