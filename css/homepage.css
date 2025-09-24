@@ -351,33 +351,55 @@ h1 {
 
 
 /*---------------------------------------CONTACT FORM*/
-.contact-form {
+.contact {
     margin-bottom: 3vh;
-    padding: 1vh 2vw;
-    color: white;
-    font-family: 'Barlow', sans-serif;
+    padding: 3rem;
+    color: #e3e3e3;
+    font-weight: 300;
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.form-control {
-    border: 3px solid rgb(28, 54, 92);
+    justify-content: center;
+    background-color: rgba(17, 34, 60, 0.5);
 }
 
 .contact-heading {
     text-align: center;
-    background-color: #11223c;
-    border-radius: 95px;
     width: 25rem;
-    padding: 2rem .5rem;
+    /* padding: 2rem .5rem; */
+    align-items: center;
 }
 
 .icon {
-    color: white;
+    color: #e3e3e3;
+    margin: .5rem;;
+}
+
+.icon:hover {
+    color: #b4a79b;
+}
+
+.contact-columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.column {
+    margin: 1rem;
+}
+
+.form-control {
+    border: 3px solid #364967;
+    border-radius: 4px;
+    padding: .5rem;
+    width: 15rem;
 }
 
 .buttons {
     padding: .5rem;
+
+    font-family: 'Barlow', sans-serif;
 }
 
 .btn {
@@ -388,7 +410,7 @@ h1 {
 
 footer {
     margin: 1vh;
-    color: white;
+    color: #e3e3e3;
     text-align: center;
     font-weight: 300;
 }
