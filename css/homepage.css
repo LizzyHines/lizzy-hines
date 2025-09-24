@@ -11,6 +11,7 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     font-family: 'Barlow', sans-serif;
+    font-weight: 300;
     line-height: 1.6;
 }
 
@@ -68,7 +69,6 @@ h1 {
   position: relative;
   color: #3a3a3a;
   text-decoration: none;
-  font-weight: 500;
   padding: 5px 0;
   transition: color 0.3s ease;
 }
@@ -143,6 +143,7 @@ h1 {
 
 .about-me h3 {
     margin-bottom: 1rem;
+    font-weight: 300;
 }
 
 .about-details {
@@ -190,9 +191,10 @@ h1 {
     padding: 2vw 3vw;
     background-color: #e3e3e3;
     text-align: center;
+    border-radius: 4px;
 }
 
-.portfolio h1 {
+.portfolio-title {
     margin-bottom: 2rem;
 }
 
@@ -201,7 +203,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    height: 12rem;
+    height: 14rem;
     margin: 2rem 0;
 }
 
@@ -209,7 +211,7 @@ h1 {
     position: relative;
     color: #e3e3e3;
     border-radius: 15px;
-    padding: 1rem;
+    padding: .5rem;
     text-align: center;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
     transition: all .3s ease;
@@ -218,6 +220,10 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card h3 {
+    font-weight: 500;
 }
 
 .card-1 {
@@ -237,7 +243,7 @@ h1 {
 }
 
 .default-text {
-    font-weight: 600;
+    font-weight: 300;
     transition: transform .3s ease;
 }
 
@@ -245,7 +251,7 @@ h1 {
 /* hidden card text */
 .card .hover-text {
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
@@ -262,6 +268,10 @@ h1 {
 .card:hover {
     background-color: #e3e3e3;
     color:#906336;
+}
+
+.card:hover h2 {
+    font-weight: 700;
 }
 
 .card-1:hover {
@@ -282,36 +292,63 @@ h1 {
 
 .card:hover h3,p {
     color: #3a3a3a;
+    white-space: break-spaces;
 }
 
 .card:hover .default-text {
-    transform: translateY(-4rem);
+    transform: translateY(-4.5rem);
 }
+
 .card:hover .hover-text {
     opacity: 1;
 }
 
+.portfolio-links {
+  position: relative;
+  color: #3a3a3a;
+  text-decoration: none;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
 
+/* Animated underline effect */
+.portfolio-links::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #3a3a3a;
+  transition: width 0.4s ease;
+}
 
+/* Hover effect */
+.portfolio-links:hover::after {
+  width: 100%;
+}
 
-/* i {
-    padding: 10px;
-} */
+/* Active link */
+.portfolio-links.active::after {
+  width: 100%;
+}
 
-@media (max-width: 768px) {
-    .portfolio p {
-        width: fit-content;
+@media (max-width: 1033px) {
+    .skill-cards {
+        grid-template-columns: repeat(2, 1fr);
+        height: 26rem;
     }
 }
 
-/*FUN
-.fun {
-    color: white;
-    background: rgba(17, 34, 60, 0.9);
-    margin: 25px;
-    padding: 3vw;
-    border: 10px solid rgb(17, 34, 60);
-}*/
+@media (max-width: 768px) {
+    .skill-cards {
+        grid-template-columns: 1fr;
+        height: 53rem;
+    }
+}
+
+
 
 /*---------------------------------------CONTACT FORM*/
 .contact-form {
@@ -353,9 +390,10 @@ footer {
     margin: 1vh;
     color: white;
     text-align: center;
+    font-weight: 300;
 }
 
-/*Responsive menu*/
+/*-----------------------------------Responsive menu*/
 @media (max-width: 768px) {
   .hamburger {
     display: block;
