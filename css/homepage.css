@@ -127,7 +127,7 @@ h1 {
     width: 40rem;
     padding: 5px;
     margin: 5px;
-    background-color: #1c365c;
+    background-color: #364967;
     border-radius: 20px;
 }
 
@@ -187,15 +187,13 @@ h1 {
 /*------------------------------------SKILLS/PORTFOLIO*/
 .portfolio {
     margin: 4vw;
-    padding: 2vw;
-    border: 10px solid #1c365c;
+    padding: 2vw 3vw;
     background-color: #e3e3e3;
-    justify-content: center;
     text-align: center;
 }
 
-.portfolio p {
-    width: 90%;
+.portfolio h1 {
+    margin-bottom: 2rem;
 }
 
 
@@ -204,16 +202,16 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     height: 12rem;
+    margin: 2rem 0;
 }
 
 .card {
     position: relative;
-    background: #1c365c;
     color: #e3e3e3;
     border-radius: 15px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 51px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
     transition: all .3s ease;
     cursor: pointer;
     overflow: hidden;
@@ -222,10 +220,27 @@ h1 {
     justify-content: center;
 }
 
+.card-1 {
+    background-color: #11223c;
+}
+
+.card-2 {
+    background-color: #364967;
+}
+
+.card-3 {
+    background-color: #5b5e62;
+}
+
+.card-4 {
+    background-color: #615040;
+}
+
 .default-text {
-    opacity: 1;
+    font-weight: 600;
     transition: transform .3s ease;
 }
+
 
 /* hidden card text */
 .card .hover-text {
@@ -234,7 +249,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: opacity .3s ease;
+    transition: opacity .7s ease;
 }
 
 .hover-text {
@@ -244,8 +259,33 @@ h1 {
     width: 12rem;
 }
 
+.card:hover {
+    background-color: #e3e3e3;
+    color:#906336;
+}
+
+.card-1:hover {
+    border: solid #11223c 4px;
+}
+
+.card-2:hover {
+    border: solid #364967 4px;
+}
+
+.card-3:hover {
+    border: solid #5b5e62 4px;
+}
+
+.card-4:hover {
+    border: solid #615040 4px;
+}
+
+.card:hover h3,p {
+    color: #3a3a3a;
+}
+
 .card:hover .default-text {
-    transition: translateY(-3rem);
+    transform: translateY(-4rem);
 }
 .card:hover .hover-text {
     opacity: 1;
