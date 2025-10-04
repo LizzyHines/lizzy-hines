@@ -119,11 +119,7 @@ h1 {
     padding: 5vh 15vh;
     color: #e3e3e3;
     text-align: left;
-    /* background-color: #11223c; */
-    background-image: url("../images/bosque-eve.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: middle;
+    background-color: #11223c;
 }
 
 
