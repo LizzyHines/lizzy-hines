@@ -364,15 +364,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.icon {
-    color: #e3e3e3;
-    margin: .5rem;
-}
-
-.icon:hover {
-    color: #b4a79b;
-}
-
 .contact-form-grid {
     display: grid;
     grid-column-gap: 1rem;
@@ -442,14 +433,31 @@ textarea {
 /*-----------------------------------FOOTER*/
 
 footer {
-    margin: 1vh;
+    margin: 1rem 0;
     color: #e3e3e3;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
 }
 
 footer h4 {
     font-weight: 300;
 }
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #e3e3e3;
+}
+
+.footer-link:hover {
+    color: #b4a79b;
+}
+
 
 /*-----------------------------------Responsive menu*/
 @media (max-width: 768px) {
