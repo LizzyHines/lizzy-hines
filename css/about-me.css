@@ -155,9 +155,15 @@ h1, h2 {
 .career {
     margin-top: 2rem;
     width: 100%;
-    background-color: rgba(144, 99, 54, 0.2);
+    /* background-color: rgba(144, 99, 54, 0.2); */
+    /* background-color: #615040; */
+    background-image: url("../images/bosque-eve.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: middle;
     border-top: solid #11223c 2px;
     border-bottom: solid #11223c 2px;
+    color: #e3e3e3;
 }
 
 .career-container {
@@ -168,7 +174,7 @@ h1, h2 {
 }
 
 .career-container h2 {
-    color: #364967;
+    color: #e3e3e3;
 }
 
 .career-timeline {
@@ -221,25 +227,21 @@ h1, h2 {
 .hobbies-container {
     margin-left: auto;
     margin-right: auto;
-    width: 50rem;
-    text-align: left;
-    background-color: rgba(17, 34, 60, .1);
+    width: 40rem;
     border-radius: 15px;
-    padding: 1rem;
 }
 
 .hobby {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 15px;
-    display: flex;
+    background-color: rgba(87, 118, 169, 0.2);
+    padding: .5rem 2rem 1rem 2rem;
+    height: 5rem;
     align-items: center;
 }
 
 .hobby h3 {
     margin-right: 1rem;
     width: 16rem;
-    text-align: left;
+    text-align: center;
 }
 
 .hobby p {
@@ -253,6 +255,36 @@ h1, h2 {
     cursor: pointer;
 }
 
+.swiper {
+    overflow: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-slide.hobby {
+    height: 9rem;
+    display: flex;
+}
+
+.swiper-slide.hobby.swiper-slide-active {
+    border-radius: 15px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #364967;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    color: #364967;
+    font-size: 20px;
+}
+
 
 
 /*----------------------------FOOTER-------*/
@@ -263,7 +295,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    /* background-color: rgba(17, 34, 60, .1); */
+    border-top: solid #3a3a3a .5px;
 }
 
 footer h4 {

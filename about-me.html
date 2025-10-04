@@ -19,6 +19,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 
     <title>LH | About</title>
 
@@ -63,7 +67,7 @@
         <div class="background">
             <div class="background-text">
                 <h3>Who I am:</h3>
-                <p>I grew up in Dearborn, Michigan with a cat and two artist parents who fostered my love for design and travelling from a young age. I went to Henry Ford College before pursuing International Studies at University of New Mexico in Albuquerque. Thereafter, I was a hospitality worker for many years - server, bartender, barista - and acquired soft skills that have made it easier to move through the world. When the pandemic caused everything to shut down in 2020, I decided to jump on an idea I'd had for a while, and learned to code.</br></br>I love my community, family, my dog, Albuquerque, and being able to build with creative, compassionate people.</p>   
+                <p>I grew up in Dearborn, Michigan with a cat and two artist parents who fostered my love for design and travelling from a young age. I went to Henry Ford College before pursuing International Studies at University of New Mexico in Albuquerque. Thereafter, I was a hospitality worker for several years - server, bartender, barista - and acquired soft skills that have made it easier to move through the world. When the pandemic caused everything to shut down in 2020, I decided to jump on an idea I'd had for a while, and learned to code.</br></br>I love my community, family, my dog, Albuquerque, and being able to build with creative, compassionate people.</p>   
             </div>
             <div class="background-photo">
                 <img class="about-img" src="./images/lizzy-kaigo.jpg" alt="Lizzy with Kaigo">
@@ -78,7 +82,7 @@
                     <p>My first tech job was as an Assistant Instructor for the Deep Dive Coding Fullstack coding bootcamp. I helped students with learning a modified MERN stack.</p>
                 </li>
                 <li>
-                    I delved into freelancing and have been able to work with several clients on exciting projects, including helping clients with development and design, and creating a prototype for an app idea.
+                    I delved into freelancing and have been able to work with several clients on exciting projects. I have contributed development and design, and creating a prototype for an app idea.
                 </li>
                 <li>
                     <p>I became a software developer and project coordinator for a local general contractor. I was tasked with helping create a project- and time-management app to help streamline their production. I needed to created mockups in Figma to illustrate ideas and workflows, and my passion for UI/UX was born.</p>
@@ -95,25 +99,39 @@
     <div class="hobbies">
         <h2>You can find me...</h2>
         <div class="hobbies-container">
-            <div class="hobby blue">
-                <h3>🏔️ OUTSIDE</h3>
-                <p>In the the Sandia mountains or in the Albuquerque Bosque (where the photos on this site were taken).</p>
-            </div>
-            <div class="hobby">
-                <h3>📚 READING</h3>
-                <p>I'm currently enjoying <a href="https://www.goodreads.com/book/show/136276877-the-last-murder-at-the-end-of-the-world">The Last Murder at the End of the World</a> by Stuart Turton.</p>
-            </div>
-            <div class="hobby blue">
-                <h3>🎲 PLAYING BOARD GAMES</h3>
-                <p>I've been playing lots of <a href="https://boardgamegeek.com/boardgame/286096/tapestry">Tapestry</a>, <a href="https://boardgamegeek.com/boardgame/379078/expeditions">Expeditions</a> and <a href="https://boardgamegeek.com/boardgame/342900/earthborne-rangers">Earthborne Rangers</a> recently.</p>
-            </div>
-            <div class="hobby">
-                <h3>🎨 CRAFTING</h3>
-                <p>I'm a few hundred cranes into a <a href="https://www.japan-experience.com/plan-your-trip/to-know/understanding-japan/senbazuru-one-thousand-cranes">senbazuru</a>, and crocheting when I'm not folding.</p>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hobby">
+                        <h3>🏔️ OUTSIDE</h3>
+                        <p>In the the Sandia mountains or in the Albuquerque Bosque (where the photos on this site were taken).</p>
+                    </div>
+                    <div class="swiper-slide hobby">
+                        <h3>🎲 PLAYING BOARD GAMES</h3>
+                        <p>I've been playing lots of <a href="https://boardgamegeek.com/boardgame/286096/tapestry">Tapestry</a>, <a href="https://boardgamegeek.com/boardgame/379078/expeditions">Expeditions</a> and <a href="https://boardgamegeek.com/boardgame/342900/earthborne-rangers">Earthborne Rangers</a> recently.</p>
+                    </div>
+                    <div class="swiper-slide hobby">
+                        <h3>📚 READING</h3>
+                        <p>I'm currently enjoying <a href="https://www.goodreads.com/book/show/136276877-the-last-murder-at-the-end-of-the-world">The Last Murder at the End of the World</a> by Stuart Turton.</p>
+                    </div>
+                    <div class="swiper-slide hobby">
+                        <h3>🎨 CRAFTING</h3>
+                        <p>I'm a few hundred cranes into a <a href="https://www.japan-experience.com/plan-your-trip/to-know/understanding-japan/senbazuru-one-thousand-cranes">senbazuru</a>, and crocheting when I'm not folding.</p>
+                    </div>
+                </div>
+
+                <!-- Pagination (dots) -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Navigation arrows -->
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
             </div>
         </div>
     </div>
 </section>
+
+
+
 
 <!---------FOOTER-->
 
@@ -126,6 +144,13 @@
         <a href="https://www.linkedin.com/in/elizabethhines2140/" class="footer-link">LinkedIn</a>
     </div>
 </footer>
+
+
+<!-- ------------swiper.js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- ----------------script.js -->
+<script src="/js/script.js"></script>
 
 
 </body>
