@@ -150,6 +150,7 @@ h1, h2 {
 .about-img {
     height: 100%;
     border-radius: 15px;
+    box-shadow: 1px 0.12px 5px #3a3a3a;
 }
 
 /* ------------------CAREER---- */
@@ -208,7 +209,7 @@ h1, h2 {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #e3e3e3;
+    background: #b17f4c;
     border: 2px solid #364967;
     box-shadow: 0 0 0 2px #11223c;
 }
@@ -294,6 +295,7 @@ footer {
     color: #3a3a3a;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 2rem;
     background-color: #3a3a3a;
     color: #e3e3e3;
@@ -308,13 +310,12 @@ footer h4 {
     gap: 1.5rem;
 }
 
-.footer-link {
-    text-decoration: none;
-    color: #e3e3e3;
+.icon {
+    filter: invert(94%) sepia(45%) saturate(3735%) hue-rotate(183deg) brightness(125%) contrast(78%);
 }
 
-.footer-link:hover {
-    font-weight: 500;
+.icon:hover {
+    filter: invert(82%) sepia(6%) saturate(667%) hue-rotate(347deg) brightness(83%) contrast(87%);
 }
 
 /*-----------------------------------Responsive menu*/

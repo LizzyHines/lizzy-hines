@@ -8,8 +8,8 @@
 body {
     background-image: url("../images/river-background.jpg");
     background-attachment: fixed !important;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    background-repeat: no-repeat !important;
+    background-position: bottom !important;
     font-family: 'Barlow', sans-serif;
     font-weight: 300 !important;
     line-height: 1.6;
@@ -449,15 +449,13 @@ footer h4 {
     gap: 1.5rem;
 }
 
-.footer-link {
-    text-decoration: none;
-    color: #e3e3e3;
+.icon {
+    filter: invert(94%) sepia(45%) saturate(3735%) hue-rotate(183deg) brightness(125%) contrast(78%);
 }
 
-.footer-link:hover {
-    color: #b4a79b;
+.icon:hover {
+    filter: invert(82%) sepia(6%) saturate(667%) hue-rotate(347deg) brightness(83%) contrast(87%);
 }
-
 
 /*-----------------------------------Responsive menu*/
 @media (max-width: 768px) {
