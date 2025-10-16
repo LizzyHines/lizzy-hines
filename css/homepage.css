@@ -35,7 +35,6 @@ html, body {
     height: 100vh;
     background: url('../images/river-background.jpg') center bottom / cover no-repeat;
     z-index: -1;
-    margin-bottom: 3rem;
 }
 
 main {
