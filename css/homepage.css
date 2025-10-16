@@ -37,6 +37,11 @@ html, body {
     z-index: -1;
 }
 
+main {
+  position: relative;
+  z-index: 1;
+}
+
 h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 700;
