@@ -15,6 +15,8 @@ body {
     line-height: 1.6;
 }
 
+
+
 h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 700;
@@ -437,6 +439,7 @@ footer {
     color: #e3e3e3;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 2rem;
 }
 
