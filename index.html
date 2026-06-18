@@ -118,7 +118,7 @@
 
 <!--CONTACT FORM-->
 <section class="contact">
-    <form id="contact" netlify>
+    <form id="contact" netlify class="contact-container">
 
         <div class="contact-heading">
             <h1>Contact Me</h1>
@@ -126,8 +126,8 @@
         </div>
 
         
-        <div class="contact-form-grid">
-
+        <div class="contact-form">
+            <div class="form-inputs">
                 <div class="form form-1">
                     <h4>Name</h4>
                     <div class="input-group-prepend"></div>
@@ -139,12 +139,13 @@
                     <div class="input-group-prepend"></div>
                     <input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
                 </div>
+            </div>
+                
 
-                <div class="form form-3">
-                    <h4>Message</h4>
-                    <!-- <div class="input-group-prepend"></div> -->
-                    <textarea class="form-control" id="message" maxlength="2000" name="message" placeholder="What would you like to build together?" required rows="8"></textarea>
-                </div>
+            <div class="form form-3">
+                <h4>Message</h4>
+                <div class="input-group-prepend"></div>
+                <textarea class="form-control" id="message" maxlength="2000" name="message" placeholder="What would you like to build together?" required rows="8"></textarea>
             </div>
         </div>
         <div class="buttons">
